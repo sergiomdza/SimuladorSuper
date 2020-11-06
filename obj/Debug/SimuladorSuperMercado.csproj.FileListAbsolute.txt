@@ -1,0 +1,10 @@
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\bin\Debug\SimuladorSuperMercado.exe.config
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\bin\Debug\SimuladorSuperMercado.exe
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\bin\Debug\SimuladorSuperMercado.pdb
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.csprojAssemblyReference.cache
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.Properties.Resources.resources
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.csproj.GenerateResource.cache
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.csproj.CoreCompileInputs.cache
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.exe
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.pdb
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.formSuper.resources
