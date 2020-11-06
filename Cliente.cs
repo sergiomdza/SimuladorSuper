@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimuladorSuperMercado2
+namespace SimuladorSuperMercado
 {
     public class Cliente
     {
@@ -16,27 +16,27 @@ namespace SimuladorSuperMercado2
         private int id;
         private int productoActual;
         private int delayActual;
-
-        public Cliente(int MaxCantidadProductos, int MaxCantidadDelay, int ID)
+        
+        public Cliente(int MaxCantidadProductos, int MaxCantidadDelay, int ID, int numentrada)
         {
-            Random rnd = new Random();
             id = ID;
-            cantidadProductos = rnd.Next(1, MaxCantidadProductos);
-            delay = rnd.Next(1, MaxCantidadDelay);
+            cantidadProductos = MaxCantidadProductos;
+            delay = MaxCantidadDelay;
             productoActual = cantidadProductos;
             delayActual = 0;
-            //Entrada = 0;
+            entrada = numentrada;
         }
         public void QuitarProductos(int cantidad) => productoActual -= cantidad;
 
         public void AumentarDelay() => delayActual += 1;
         public int ID { get => id;}
-        public int Entrada { get => entrada; set => entrada = value; }
+        public int Entrada { get => entrada;}
         public int Salida { get => salida; set => salida = value; }
         public int TiempoCaja { get => tiempoCaja; set => tiempoCaja = value; }
         public int CantidadProductos { get => cantidadProductos; }
         public int Delay { get => delay; }
+        public int DelayActual { get => delayActual; }
 
-        
+
     }
 }
