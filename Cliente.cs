@@ -22,11 +22,10 @@ namespace SimuladorSuperMercado
             id = ID;
             cantidadProductos = MaxCantidadProductos;
             delay = MaxCantidadDelay;
-            productoActual = cantidadProductos;
             delayActual = 0;
             entrada = numentrada;
         }
-        public void QuitarProductos(int cantidad) => productoActual -= cantidad;
+        public void QuitarProductos(int cantidad) => cantidadProductos -= cantidad;
 
         public void AumentarDelay() => delayActual += 1;
         public int ID { get => id;}

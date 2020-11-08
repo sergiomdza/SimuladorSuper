@@ -8,3 +8,4 @@ D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura
 D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.exe
 D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.pdb
 D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.formSuper.resources
+D:\mendo\Documents\Sergio Mendoza\Google Drive\IDTS Modelo\3 semestre\Estructura de Datos\Parcial 2\SimuladorSuperMercado\obj\Debug\SimuladorSuperMercado.Configuracion.resources

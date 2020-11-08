@@ -35,11 +35,21 @@
             this.columnDelayActual = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.ListViewCaja1 = new System.Windows.Forms.ListView();
+            this.columnNumCliente1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnNumProd1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
             this.ListViewCaja2 = new System.Windows.Forms.ListView();
+            this.columnNumeroCliente2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnNumeroProd2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ListViewCaja3 = new System.Windows.Forms.ListView();
+            this.columnNumCliente3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnNumProd3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ListViewCaja4 = new System.Windows.Forms.ListView();
+            this.columnNumCliente4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnNumProd4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ListViewCaja5 = new System.Windows.Forms.ListView();
+            this.columnNumCliente5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnNumProd5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,16 +57,7 @@
             this.lblInteracion = new System.Windows.Forms.Label();
             this.btnSiguienteInt = new System.Windows.Forms.Button();
             this.btnSinCliente = new System.Windows.Forms.Button();
-            this.columnNumCliente1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumProd1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumeroCliente2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumeroProd2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumCliente3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumProd3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumCliente4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumProd4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumCliente5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNumProd5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnConfig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ListViewClientes
@@ -117,6 +118,16 @@
             this.ListViewCaja1.UseCompatibleStateImageBehavior = false;
             this.ListViewCaja1.View = System.Windows.Forms.View.Details;
             // 
+            // columnNumCliente1
+            // 
+            this.columnNumCliente1.Text = "Numero de cliente";
+            this.columnNumCliente1.Width = 125;
+            // 
+            // columnNumProd1
+            // 
+            this.columnNumProd1.Text = "Numero de Productos";
+            this.columnNumProd1.Width = 155;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -140,6 +151,16 @@
             this.ListViewCaja2.UseCompatibleStateImageBehavior = false;
             this.ListViewCaja2.View = System.Windows.Forms.View.Details;
             // 
+            // columnNumeroCliente2
+            // 
+            this.columnNumeroCliente2.Text = "Numero de Cliente";
+            this.columnNumeroCliente2.Width = 134;
+            // 
+            // columnNumeroProd2
+            // 
+            this.columnNumeroProd2.Text = "Numero de Productos";
+            this.columnNumeroProd2.Width = 150;
+            // 
             // ListViewCaja3
             // 
             this.ListViewCaja3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -152,6 +173,16 @@
             this.ListViewCaja3.TabIndex = 5;
             this.ListViewCaja3.UseCompatibleStateImageBehavior = false;
             this.ListViewCaja3.View = System.Windows.Forms.View.Details;
+            // 
+            // columnNumCliente3
+            // 
+            this.columnNumCliente3.Text = "Numero de Cliente";
+            this.columnNumCliente3.Width = 134;
+            // 
+            // columnNumProd3
+            // 
+            this.columnNumProd3.Text = "Numero de productos";
+            this.columnNumProd3.Width = 153;
             // 
             // ListViewCaja4
             // 
@@ -166,6 +197,16 @@
             this.ListViewCaja4.UseCompatibleStateImageBehavior = false;
             this.ListViewCaja4.View = System.Windows.Forms.View.Details;
             // 
+            // columnNumCliente4
+            // 
+            this.columnNumCliente4.Text = "Numero de Cliente";
+            this.columnNumCliente4.Width = 135;
+            // 
+            // columnNumProd4
+            // 
+            this.columnNumProd4.Text = "Numero de Producto";
+            this.columnNumProd4.Width = 147;
+            // 
             // ListViewCaja5
             // 
             this.ListViewCaja5.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -178,6 +219,16 @@
             this.ListViewCaja5.TabIndex = 7;
             this.ListViewCaja5.UseCompatibleStateImageBehavior = false;
             this.ListViewCaja5.View = System.Windows.Forms.View.Details;
+            // 
+            // columnNumCliente5
+            // 
+            this.columnNumCliente5.Text = "Numero de Cliente";
+            this.columnNumCliente5.Width = 133;
+            // 
+            // columnNumProd5
+            // 
+            this.columnNumProd5.Text = "Numero de Productos";
+            this.columnNumProd5.Width = 173;
             // 
             // label3
             // 
@@ -234,7 +285,7 @@
             this.btnSiguienteInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguienteInt.Location = new System.Drawing.Point(17, 89);
             this.btnSiguienteInt.Name = "btnSiguienteInt";
-            this.btnSiguienteInt.Size = new System.Drawing.Size(156, 81);
+            this.btnSiguienteInt.Size = new System.Drawing.Size(145, 73);
             this.btnSiguienteInt.TabIndex = 14;
             this.btnSiguienteInt.Text = "Siguiente Iteración";
             this.btnSiguienteInt.UseVisualStyleBackColor = true;
@@ -243,69 +294,31 @@
             // btnSinCliente
             // 
             this.btnSinCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSinCliente.Location = new System.Drawing.Point(17, 191);
+            this.btnSinCliente.Location = new System.Drawing.Point(17, 168);
             this.btnSinCliente.Name = "btnSinCliente";
-            this.btnSinCliente.Size = new System.Drawing.Size(156, 81);
+            this.btnSinCliente.Size = new System.Drawing.Size(145, 45);
             this.btnSinCliente.TabIndex = 15;
             this.btnSinCliente.Text = "Sin Cliente";
             this.btnSinCliente.UseVisualStyleBackColor = true;
             this.btnSinCliente.Click += new System.EventHandler(this.btnSinCliente_Click);
             // 
-            // columnNumCliente1
+            // btnConfig
             // 
-            this.columnNumCliente1.Text = "Numero de cliente";
-            this.columnNumCliente1.Width = 125;
-            // 
-            // columnNumProd1
-            // 
-            this.columnNumProd1.Text = "Numero de Productos";
-            this.columnNumProd1.Width = 155;
-            // 
-            // columnNumeroCliente2
-            // 
-            this.columnNumeroCliente2.Text = "Numero de Cliente";
-            this.columnNumeroCliente2.Width = 134;
-            // 
-            // columnNumeroProd2
-            // 
-            this.columnNumeroProd2.Text = "Numero de Productos";
-            this.columnNumeroProd2.Width = 150;
-            // 
-            // columnNumCliente3
-            // 
-            this.columnNumCliente3.Text = "Numero de Cliente";
-            this.columnNumCliente3.Width = 134;
-            // 
-            // columnNumProd3
-            // 
-            this.columnNumProd3.Text = "Numero de productos";
-            this.columnNumProd3.Width = 153;
-            // 
-            // columnNumCliente4
-            // 
-            this.columnNumCliente4.Text = "Numero de Cliente";
-            this.columnNumCliente4.Width = 135;
-            // 
-            // columnNumProd4
-            // 
-            this.columnNumProd4.Text = "Numero de Producto";
-            this.columnNumProd4.Width = 147;
-            // 
-            // columnNumCliente5
-            // 
-            this.columnNumCliente5.Text = "Numero de Cliente";
-            this.columnNumCliente5.Width = 133;
-            // 
-            // columnNumProd5
-            // 
-            this.columnNumProd5.Text = "Numero de Productos";
-            this.columnNumProd5.Width = 173;
+            this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfig.Location = new System.Drawing.Point(12, 284);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(150, 45);
+            this.btnConfig.TabIndex = 16;
+            this.btnConfig.Text = "Configuracion";
+            this.btnConfig.UseVisualStyleBackColor = true;
+            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
             // formSuper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1516, 700);
+            this.Controls.Add(this.btnConfig);
             this.Controls.Add(this.btnSinCliente);
             this.Controls.Add(this.btnSiguienteInt);
             this.Controls.Add(this.lblInteracion);
@@ -361,6 +374,7 @@
         private System.Windows.Forms.ColumnHeader columnNumProd4;
         private System.Windows.Forms.ColumnHeader columnNumCliente5;
         private System.Windows.Forms.ColumnHeader columnNumProd5;
+        private System.Windows.Forms.Button btnConfig;
     }
 }
 
