@@ -17,15 +17,15 @@ namespace SimuladorSuperMercado
         private int Iteraciones = 0;
 
         // Valores Default Configuración
-        int MAX_NUM_OF_CLIENTS = 10;
-        int MAX_NUM_OF_PRODUCTS = 5;
-        int MAX_CLIENT_DELAY = 5;
-        int EXPRESS_LANE_MAX_PRODUCTS = 5;
- 
+        public int MAX_NUM_OF_CLIENTS = 10;
+        public int MAX_NUM_OF_PRODUCTS = 15;
+        public int MAX_CLIENT_DELAY = 10;
+        public int EXPRESS_LANE_MAX_PRODUCTS = 5;
+        public int[] CheckoutCajas = new int[5] {1, 1, 1, 1, 1};
 
         List<Cliente> ListaClientes = new List<Cliente>();
         ArrayQueue<Cliente> ClientesPendientes = new ArrayQueue<Cliente>(0);
-        List<Caja> Cajas = new List<Caja>();
+        public List<Caja> Cajas = new List<Caja>();
         public formSuper()
         {
             InitializeComponent();
@@ -34,11 +34,11 @@ namespace SimuladorSuperMercado
                 Caja caja;
                 if (i == 1)
                 {
-                    caja = new Caja(checkout_num: 3, maxproducts: EXPRESS_LANE_MAX_PRODUCTS);
+                    caja = new Caja(checkout_num: CheckoutCajas[i-1], maxproducts: EXPRESS_LANE_MAX_PRODUCTS);
                 }
                 else
                 {
-                    caja = new Caja(checkout_num: 2);
+                    caja = new Caja(checkout_num: CheckoutCajas[i-1]);
                 }
 
                 Cajas.Add(caja);
@@ -78,11 +78,11 @@ namespace SimuladorSuperMercado
         private void agregarCliente()
         {
             Random rnd = new Random();
-            int noCliente = rnd.Next(1, MAX_NUM_OF_CLIENTS);
+            int noCliente = rnd.Next(1, MAX_NUM_OF_CLIENTS+1);
             for (int i = 0; i < noCliente; i++)
             {
-                int delay = rnd.Next(1, MAX_CLIENT_DELAY);
-                int prod = rnd.Next(1, MAX_NUM_OF_PRODUCTS);
+                int delay = rnd.Next(1, MAX_CLIENT_DELAY+1);
+                int prod = rnd.Next(1, MAX_NUM_OF_PRODUCTS+1);
                 Cliente cliente = new Cliente(MaxCantidadDelay: delay, MaxCantidadProductos: prod, ID: ContadorClientes, numentrada: Iteraciones);
                 ListaClientes.Add(cliente);
                 ContadorClientes += 1;
@@ -237,10 +237,19 @@ namespace SimuladorSuperMercado
 
         private void btnConfig_Click(object sender, EventArgs e)
         {
-            Configuracion configTab = new Configuracion();
-            MAX_NUM_OF_CLIENTS = Convert.ToInt32(configTab.numMaxClient.Value);
-            MAX_NUM_OF_PRODUCTS = Convert.ToInt32(configTab.numMaxProduct.Value);
-            MAX_CLIENT_DELAY = Convert.ToInt32(configTab.numMaxDelay.Value);
+            Configuracion configTab = new Configuracion(this);
+            configTab.numMaxClient.Value = MAX_NUM_OF_CLIENTS;
+            configTab.numMaxProduct.Value = MAX_NUM_OF_PRODUCTS;
+            configTab.numMaxDelay.Value = MAX_CLIENT_DELAY;
+
+            configTab.numMaxProductsExpressLane.Value = EXPRESS_LANE_MAX_PRODUCTS;
+            configTab.numCheckoutCaja1.Value = Cajas[0].Checkout;
+            configTab.numCheckoutCaja2.Value = Cajas[1].Checkout;
+            configTab.numCheckoutCaja3.Value = Cajas[2].Checkout;
+            configTab.numCheckoutCaja4.Value = Cajas[3].Checkout;
+            configTab.numCheckoutCaja5.Value = Cajas[4].Checkout;
+
+            configTab.Show();
         }
     }
 }
