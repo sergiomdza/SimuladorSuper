@@ -13,6 +13,7 @@ namespace SimuladorSuperMercado
     public partial class Configuracion : Form
     {
         formSuper formPrincipal;
+       
         public Configuracion(formSuper instanciaFormSuper)
         {
             formPrincipal = instanciaFormSuper;
@@ -32,6 +33,8 @@ namespace SimuladorSuperMercado
             formPrincipal.Cajas[2].Checkout = Convert.ToInt32(numCheckoutCaja3.Value);
             formPrincipal.Cajas[3].Checkout = Convert.ToInt32(numCheckoutCaja4.Value);
             formPrincipal.Cajas[4].Checkout = Convert.ToInt32(numCheckoutCaja5.Value);
+
+            this.Close();
         }
     }
 }

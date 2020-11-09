@@ -17,9 +17,9 @@ namespace SimuladorSuperMercado
         private int Iteraciones = 0;
 
         // Valores Default Configuración
-        public int MAX_NUM_OF_CLIENTS = 10;
-        public int MAX_NUM_OF_PRODUCTS = 15;
-        public int MAX_CLIENT_DELAY = 10;
+        public int MAX_NUM_OF_CLIENTS = 5;
+        public int MAX_NUM_OF_PRODUCTS = 10;
+        public int MAX_CLIENT_DELAY = 6;
         public int EXPRESS_LANE_MAX_PRODUCTS = 5;
         public int[] CheckoutCajas = new int[5] {1, 1, 1, 1, 1};
 
@@ -154,28 +154,34 @@ namespace SimuladorSuperMercado
             {
                 if (Cajas[i].Queue.Size > 0) {
                     List<Cliente> array = Cajas[i].Queue.toString();
-                    foreach (Cliente e in array)
+                    for(int j = 0; j<array.Count(); j++)
                     {
+                        Cliente e = array[j];
                         switch (i)
                         {
                             case 0:
                                 //Quitar productos
-                                if (Cajas[i].Queue.Head.CantidadProductos <= 0)
+                                if ( j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual-1)
+                                {
+                                    Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
+                                }
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1 && Cajas[i].Queue.Head.CantidadProductos <= 0)
                                 {
                                     Cajas[i].Queue.Dequeue();
                                     break;
                                 }
-
                                 ListViewItem Cliente = new ListViewItem(e.ID.ToString());
                                 Cliente.SubItems.Add(e.CantidadProductos.ToString());
                                 ListViewCaja1.Items.Add(Cliente);
-                                Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
-                                
                                 break;
 
                             case 1:
                                 //Quitar productos
-                                if (Cajas[i].Queue.Head.CantidadProductos <= 0)
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1)
+                                {
+                                    Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
+                                }
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1 && Cajas[i].Queue.Head.CantidadProductos <= 0)
                                 {
                                     Cajas[i].Queue.Dequeue();
                                     break;
@@ -183,13 +189,15 @@ namespace SimuladorSuperMercado
                                 ListViewItem Cliente2 = new ListViewItem(e.ID.ToString());
                                 Cliente2.SubItems.Add(e.CantidadProductos.ToString());
                                 ListViewCaja2.Items.Add(Cliente2);
-                                Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
-                                
                                 break;
 
                             case 2:
                                 //Quitar productos
-                                if (Cajas[i].Queue.Head.CantidadProductos <= 0)
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1)
+                                {
+                                    Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
+                                }
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1 && Cajas[i].Queue.Head.CantidadProductos <= 0)
                                 {
                                     Cajas[i].Queue.Dequeue();
                                     break;
@@ -197,13 +205,16 @@ namespace SimuladorSuperMercado
                                 ListViewItem Cliente3 = new ListViewItem(e.ID.ToString());
                                 Cliente3.SubItems.Add(e.CantidadProductos.ToString());
                                 ListViewCaja3.Items.Add(Cliente3);
-                                Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
-                                
+
                                 break;
 
                             case 3:
                                 //Quitar productos
-                                if (Cajas[i].Queue.Head.CantidadProductos <= 0)
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1)
+                                {
+                                    Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
+                                }
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1 && Cajas[i].Queue.Head.CantidadProductos <= 0)
                                 {
                                     Cajas[i].Queue.Dequeue();
                                     break;
@@ -212,24 +223,28 @@ namespace SimuladorSuperMercado
                                 Cliente4.SubItems.Add(e.CantidadProductos.ToString());
                                 ListViewCaja4.Items.Add(Cliente4);
 
-                                Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
                                 break;
 
                             case 4:
                                 //Quitar productos
-                                if (Cajas[i].Queue.Head.CantidadProductos <= 0)
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1)
+                                {
+                                    Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
+                                }
+                                if (j == 0 && Cajas[i].Queue.Head.Delay < Cajas[i].Queue.Head.DelayActual - 1 && Cajas[i].Queue.Head.CantidadProductos <= 0)
                                 {
                                     Cajas[i].Queue.Dequeue();
                                     break;
                                 }
+
                                 ListViewItem Cliente5 = new ListViewItem(e.ID.ToString());
                                 Cliente5.SubItems.Add(e.CantidadProductos.ToString());
                                 ListViewCaja5.Items.Add(Cliente5);
 
-                                Cajas[i].Queue.Head.QuitarProductos(Cajas[i].Checkout);
                                 break;
 
                         }
+                        e.AumentarDelay();
                     }
                 }
             }

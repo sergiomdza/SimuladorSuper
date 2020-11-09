@@ -14,7 +14,6 @@ namespace SimuladorSuperMercado
         private int cantidadProductos;
         private int tiempoCaja;
         private int id;
-        private int productoActual;
         private int delayActual;
         
         public Cliente(int MaxCantidadProductos, int MaxCantidadDelay, int ID, int numentrada)
