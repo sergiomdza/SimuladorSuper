@@ -29,42 +29,47 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.numMaxClient = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numMaxProduct = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.numMaxDelay = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numMaxProductsExpressLane = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numCheckoutCaja1 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numCheckoutCaja2 = new System.Windows.Forms.NumericUpDown();
-            this.numCheckoutCaja3 = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.numCheckoutCaja4 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numMaxProduct = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numMaxClient = new System.Windows.Forms.NumericUpDown();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.numCheckoutCaja5 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.numCheckoutCaja4 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.numCheckoutCaja3 = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numCheckoutCaja2 = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.numCheckoutCaja1 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numMaxProductsExpressLane = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numSeconds = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxClient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDelay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxProductsExpressLane)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxClient)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxProductsExpressLane)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.numSeconds);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.numMaxDelay);
             this.groupBox1.Controls.Add(this.label2);
@@ -77,6 +82,60 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configuración General:";
+            // 
+            // label3
+            // 
+            this.label3.AutoEllipsis = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 257);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(284, 68);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Número máximo de iteraciones de retardo por cliente:";
+            // 
+            // numMaxDelay
+            // 
+            this.numMaxDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMaxDelay.Location = new System.Drawing.Point(296, 267);
+            this.numMaxDelay.Name = "numMaxDelay";
+            this.numMaxDelay.Size = new System.Drawing.Size(120, 34);
+            this.numMaxDelay.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoEllipsis = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(284, 68);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Número máximo de articulos por cliente:";
+            // 
+            // numMaxProduct
+            // 
+            this.numMaxProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMaxProduct.Location = new System.Drawing.Point(296, 158);
+            this.numMaxProduct.Name = "numMaxProduct";
+            this.numMaxProduct.Size = new System.Drawing.Size(120, 34);
+            this.numMaxProduct.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoEllipsis = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(284, 68);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Numero máximo de clientes por iteración:";
+            // 
+            // numMaxClient
+            // 
+            this.numMaxClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMaxClient.Location = new System.Drawing.Point(296, 68);
+            this.numMaxClient.Name = "numMaxClient";
+            this.numMaxClient.Size = new System.Drawing.Size(120, 34);
+            this.numMaxClient.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -101,174 +160,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Configuraciones Caja";
             // 
-            // numMaxClient
+            // label10
             // 
-            this.numMaxClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMaxClient.Location = new System.Drawing.Point(296, 68);
-            this.numMaxClient.Name = "numMaxClient";
-            this.numMaxClient.Size = new System.Drawing.Size(120, 34);
-            this.numMaxClient.TabIndex = 0;
+            this.label10.AutoEllipsis = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 120);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(365, 31);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Checkout products por iteración: ";
             // 
-            // label1
+            // btnGuardar
             // 
-            this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 68);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Numero máximo de clientes por iteración:";
-            // 
-            // label2
-            // 
-            this.label2.AutoEllipsis = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 68);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Número máximo de articulos por cliente:";
-            // 
-            // numMaxProduct
-            // 
-            this.numMaxProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMaxProduct.Location = new System.Drawing.Point(296, 158);
-            this.numMaxProduct.Name = "numMaxProduct";
-            this.numMaxProduct.Size = new System.Drawing.Size(120, 34);
-            this.numMaxProduct.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoEllipsis = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 257);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(284, 68);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Número máximo de iteraciones de retardo por cliente:";
-            // 
-            // numMaxDelay
-            // 
-            this.numMaxDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMaxDelay.Location = new System.Drawing.Point(296, 267);
-            this.numMaxDelay.Name = "numMaxDelay";
-            this.numMaxDelay.Size = new System.Drawing.Size(120, 34);
-            this.numMaxDelay.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoEllipsis = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(365, 31);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Máximo de productos de la caja rápida:";
-            // 
-            // numMaxProductsExpressLane
-            // 
-            this.numMaxProductsExpressLane.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMaxProductsExpressLane.Location = new System.Drawing.Point(366, 70);
-            this.numMaxProductsExpressLane.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numMaxProductsExpressLane.Name = "numMaxProductsExpressLane";
-            this.numMaxProductsExpressLane.Size = new System.Drawing.Size(120, 34);
-            this.numMaxProductsExpressLane.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoEllipsis = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 157);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 31);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Caja 1:";
-            // 
-            // numCheckoutCaja1
-            // 
-            this.numCheckoutCaja1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCheckoutCaja1.Location = new System.Drawing.Point(130, 159);
-            this.numCheckoutCaja1.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numCheckoutCaja1.Name = "numCheckoutCaja1";
-            this.numCheckoutCaja1.Size = new System.Drawing.Size(120, 34);
-            this.numCheckoutCaja1.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoEllipsis = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(40, 209);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 31);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Caja 2:";
-            // 
-            // numCheckoutCaja2
-            // 
-            this.numCheckoutCaja2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCheckoutCaja2.Location = new System.Drawing.Point(130, 209);
-            this.numCheckoutCaja2.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numCheckoutCaja2.Name = "numCheckoutCaja2";
-            this.numCheckoutCaja2.Size = new System.Drawing.Size(120, 34);
-            this.numCheckoutCaja2.TabIndex = 10;
-            // 
-            // numCheckoutCaja3
-            // 
-            this.numCheckoutCaja3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCheckoutCaja3.Location = new System.Drawing.Point(130, 256);
-            this.numCheckoutCaja3.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numCheckoutCaja3.Name = "numCheckoutCaja3";
-            this.numCheckoutCaja3.Size = new System.Drawing.Size(120, 34);
-            this.numCheckoutCaja3.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoEllipsis = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 256);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 31);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Caja 3:";
-            // 
-            // numCheckoutCaja4
-            // 
-            this.numCheckoutCaja4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCheckoutCaja4.Location = new System.Drawing.Point(130, 305);
-            this.numCheckoutCaja4.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numCheckoutCaja4.Name = "numCheckoutCaja4";
-            this.numCheckoutCaja4.Size = new System.Drawing.Size(120, 34);
-            this.numCheckoutCaja4.TabIndex = 14;
-            // 
-            // label8
-            // 
-            this.label8.AutoEllipsis = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(40, 305);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 31);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Caja 4:";
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(304, 443);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(182, 66);
+            this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.Text = "Guardar todos los cambios";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // numCheckoutCaja5
             // 
@@ -293,26 +204,143 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Caja 5:";
             // 
-            // btnGuardar
+            // numCheckoutCaja4
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(304, 443);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(182, 66);
-            this.btnGuardar.TabIndex = 2;
-            this.btnGuardar.Text = "Guardar todos los cambios";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.numCheckoutCaja4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCheckoutCaja4.Location = new System.Drawing.Point(130, 305);
+            this.numCheckoutCaja4.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numCheckoutCaja4.Name = "numCheckoutCaja4";
+            this.numCheckoutCaja4.Size = new System.Drawing.Size(120, 34);
+            this.numCheckoutCaja4.TabIndex = 14;
             // 
-            // label10
+            // label8
             // 
-            this.label10.AutoEllipsis = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 120);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(365, 31);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Checkout products por iteración: ";
+            this.label8.AutoEllipsis = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(40, 305);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 31);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Caja 4:";
+            // 
+            // numCheckoutCaja3
+            // 
+            this.numCheckoutCaja3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCheckoutCaja3.Location = new System.Drawing.Point(130, 256);
+            this.numCheckoutCaja3.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numCheckoutCaja3.Name = "numCheckoutCaja3";
+            this.numCheckoutCaja3.Size = new System.Drawing.Size(120, 34);
+            this.numCheckoutCaja3.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoEllipsis = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(40, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 31);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Caja 3:";
+            // 
+            // numCheckoutCaja2
+            // 
+            this.numCheckoutCaja2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCheckoutCaja2.Location = new System.Drawing.Point(130, 209);
+            this.numCheckoutCaja2.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numCheckoutCaja2.Name = "numCheckoutCaja2";
+            this.numCheckoutCaja2.Size = new System.Drawing.Size(120, 34);
+            this.numCheckoutCaja2.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoEllipsis = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(40, 209);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 31);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Caja 2:";
+            // 
+            // numCheckoutCaja1
+            // 
+            this.numCheckoutCaja1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCheckoutCaja1.Location = new System.Drawing.Point(130, 159);
+            this.numCheckoutCaja1.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numCheckoutCaja1.Name = "numCheckoutCaja1";
+            this.numCheckoutCaja1.Size = new System.Drawing.Size(120, 34);
+            this.numCheckoutCaja1.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoEllipsis = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(40, 157);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 31);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Caja 1:";
+            // 
+            // numMaxProductsExpressLane
+            // 
+            this.numMaxProductsExpressLane.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMaxProductsExpressLane.Location = new System.Drawing.Point(366, 70);
+            this.numMaxProductsExpressLane.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numMaxProductsExpressLane.Name = "numMaxProductsExpressLane";
+            this.numMaxProductsExpressLane.Size = new System.Drawing.Size(120, 34);
+            this.numMaxProductsExpressLane.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoEllipsis = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(365, 31);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Máximo de productos de la caja rápida:";
+            // 
+            // label11
+            // 
+            this.label11.AutoEllipsis = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(0, 356);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(284, 68);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Segundos por cada iteración:";
+            // 
+            // numSeconds
+            // 
+            this.numSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSeconds.Location = new System.Drawing.Point(296, 351);
+            this.numSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.numSeconds.Name = "numSeconds";
+            this.numSeconds.Size = new System.Drawing.Size(120, 34);
+            this.numSeconds.TabIndex = 7;
             // 
             // Configuracion
             // 
@@ -324,16 +352,17 @@
             this.Name = "Configuracion";
             this.Text = "Configuracion";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxClient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDelay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxProductsExpressLane)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxClient)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCheckoutCaja1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxProductsExpressLane)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,5 +391,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.NumericUpDown numSeconds;
+        private System.Windows.Forms.Label label11;
     }
 }

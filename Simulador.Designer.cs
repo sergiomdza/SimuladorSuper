@@ -55,9 +55,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblInteracion = new System.Windows.Forms.Label();
-            this.btnSiguienteInt = new System.Windows.Forms.Button();
-            this.btnSinCliente = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
+            this.btnIniciarTimer = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.lblDebug = new System.Windows.Forms.Label();
+            this.checkBoxCliente = new System.Windows.Forms.CheckBox();
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.btnDetenerTimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ListViewClientes
@@ -78,12 +82,12 @@
             // columnNumCliente
             // 
             this.columnNumCliente.Text = "Numero de Cliente";
-            this.columnNumCliente.Width = 158;
+            this.columnNumCliente.Width = 138;
             // 
             // columnCantidadProductos
             // 
             this.columnCantidadProductos.Text = "Numero de productos";
-            this.columnCantidadProductos.Width = 178;
+            this.columnCantidadProductos.Width = 146;
             // 
             // columnMaxDelay
             // 
@@ -273,54 +277,97 @@
             // lblInteracion
             // 
             this.lblInteracion.AutoSize = true;
-            this.lblInteracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInteracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInteracion.Location = new System.Drawing.Point(12, 33);
             this.lblInteracion.Name = "lblInteracion";
-            this.lblInteracion.Size = new System.Drawing.Size(199, 29);
+            this.lblInteracion.Size = new System.Drawing.Size(165, 25);
             this.lblInteracion.TabIndex = 12;
             this.lblInteracion.Text = "Iteración actual: 0";
-            // 
-            // btnSiguienteInt
-            // 
-            this.btnSiguienteInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguienteInt.Location = new System.Drawing.Point(17, 89);
-            this.btnSiguienteInt.Name = "btnSiguienteInt";
-            this.btnSiguienteInt.Size = new System.Drawing.Size(145, 73);
-            this.btnSiguienteInt.TabIndex = 14;
-            this.btnSiguienteInt.Text = "Siguiente Iteración";
-            this.btnSiguienteInt.UseVisualStyleBackColor = true;
-            this.btnSiguienteInt.Click += new System.EventHandler(this.btnSiguienteIteracion_Click);
-            // 
-            // btnSinCliente
-            // 
-            this.btnSinCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSinCliente.Location = new System.Drawing.Point(17, 168);
-            this.btnSinCliente.Name = "btnSinCliente";
-            this.btnSinCliente.Size = new System.Drawing.Size(145, 45);
-            this.btnSinCliente.TabIndex = 15;
-            this.btnSinCliente.Text = "Sin Cliente";
-            this.btnSinCliente.UseVisualStyleBackColor = true;
-            this.btnSinCliente.Click += new System.EventHandler(this.btnSinCliente_Click);
             // 
             // btnConfig
             // 
             this.btnConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfig.Location = new System.Drawing.Point(12, 284);
             this.btnConfig.Name = "btnConfig";
-            this.btnConfig.Size = new System.Drawing.Size(150, 45);
+            this.btnConfig.Size = new System.Drawing.Size(160, 45);
             this.btnConfig.TabIndex = 16;
             this.btnConfig.Text = "Configuracion";
             this.btnConfig.UseVisualStyleBackColor = true;
             this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
+            // 
+            // btnIniciarTimer
+            // 
+            this.btnIniciarTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarTimer.Location = new System.Drawing.Point(17, 120);
+            this.btnIniciarTimer.Name = "btnIniciarTimer";
+            this.btnIniciarTimer.Size = new System.Drawing.Size(100, 102);
+            this.btnIniciarTimer.TabIndex = 17;
+            this.btnIniciarTimer.Text = "Iniciar Timer";
+            this.btnIniciarTimer.UseVisualStyleBackColor = true;
+            this.btnIniciarTimer.Click += new System.EventHandler(this.IniciarTimer_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(174, 284);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(103, 45);
+            this.btnReset.TabIndex = 18;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.Location = new System.Drawing.Point(280, 345);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Size = new System.Drawing.Size(0, 17);
+            this.lblDebug.TabIndex = 19;
+            // 
+            // checkBoxCliente
+            // 
+            this.checkBoxCliente.AutoSize = true;
+            this.checkBoxCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCliente.Location = new System.Drawing.Point(12, 228);
+            this.checkBoxCliente.Name = "checkBoxCliente";
+            this.checkBoxCliente.Size = new System.Drawing.Size(215, 33);
+            this.checkBoxCliente.TabIndex = 20;
+            this.checkBoxCliente.Text = "Agregar Clientes";
+            this.checkBoxCliente.UseVisualStyleBackColor = true;
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Location = new System.Drawing.Point(12, 62);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(237, 55);
+            this.lblTimer.TabIndex = 21;
+            this.lblTimer.Text = "Segundos para siguiente Iteración:";
+            // 
+            // btnDetenerTimer
+            // 
+            this.btnDetenerTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetenerTimer.Location = new System.Drawing.Point(149, 120);
+            this.btnDetenerTimer.Name = "btnDetenerTimer";
+            this.btnDetenerTimer.Size = new System.Drawing.Size(100, 102);
+            this.btnDetenerTimer.TabIndex = 22;
+            this.btnDetenerTimer.Text = "Detener Timer";
+            this.btnDetenerTimer.UseVisualStyleBackColor = true;
+            this.btnDetenerTimer.Click += new System.EventHandler(this.btnDetenerTimer_Click);
             // 
             // formSuper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1516, 700);
+            this.Controls.Add(this.btnDetenerTimer);
+            this.Controls.Add(this.lblTimer);
+            this.Controls.Add(this.checkBoxCliente);
+            this.Controls.Add(this.lblDebug);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnIniciarTimer);
             this.Controls.Add(this.btnConfig);
-            this.Controls.Add(this.btnSinCliente);
-            this.Controls.Add(this.btnSiguienteInt);
             this.Controls.Add(this.lblInteracion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -362,8 +409,6 @@
         private System.Windows.Forms.ColumnHeader columnCantidadProductos;
         private System.Windows.Forms.ColumnHeader columnMaxDelay;
         private System.Windows.Forms.ColumnHeader columnDelayActual;
-        private System.Windows.Forms.Button btnSiguienteInt;
-        private System.Windows.Forms.Button btnSinCliente;
         private System.Windows.Forms.ColumnHeader columnNumCliente1;
         private System.Windows.Forms.ColumnHeader columnNumProd1;
         private System.Windows.Forms.ColumnHeader columnNumeroCliente2;
@@ -375,6 +420,12 @@
         private System.Windows.Forms.ColumnHeader columnNumCliente5;
         private System.Windows.Forms.ColumnHeader columnNumProd5;
         private System.Windows.Forms.Button btnConfig;
+        private System.Windows.Forms.Button btnIniciarTimer;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label lblDebug;
+        private System.Windows.Forms.CheckBox checkBoxCliente;
+        private System.Windows.Forms.Button btnDetenerTimer;
+        public System.Windows.Forms.Label lblTimer;
     }
 }
 

@@ -12,7 +12,6 @@ namespace SimuladorSuperMercado
         private int salida;
         private int delay;
         private int cantidadProductos;
-        private int tiempoCaja;
         private int id;
         private int delayActual;
         
@@ -30,7 +29,6 @@ namespace SimuladorSuperMercado
         public int ID { get => id;}
         public int Entrada { get => entrada;}
         public int Salida { get => salida; set => salida = value; }
-        public int TiempoCaja { get => tiempoCaja; set => tiempoCaja = value; }
         public int CantidadProductos { get => cantidadProductos; }
         public int Delay { get => delay; }
         public int DelayActual { get => delayActual; }

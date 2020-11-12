@@ -34,6 +34,10 @@ namespace SimuladorSuperMercado
             formPrincipal.Cajas[3].Checkout = Convert.ToInt32(numCheckoutCaja4.Value);
             formPrincipal.Cajas[4].Checkout = Convert.ToInt32(numCheckoutCaja5.Value);
 
+            formPrincipal.SegundosIteracion = Convert.ToInt32(numSeconds.Value);
+            formPrincipal.segundoActual = 0;
+            formPrincipal.lblTimer.Text = String.Format($"Segundos para siguiente Iteración: { formPrincipal.SegundosIteracion - formPrincipal.segundoActual}");
+
             this.Close();
         }
     }
